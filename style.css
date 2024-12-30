@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white ;
+    font-family: 'SF Pro';
+}
+body{
+    background-color: rgb(30, 30, 30);
+}
+.header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 10rem; 
+ }
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 2.2rem;
+ }
+ .nav:hover{
+    .bar-icon{
+        fill: rgba(60, 60, 60);
+        transition: fill 0.1s ease-in-out;
+    }
+    .nav-items{
+        opacity: 1;
+        transition: all 0.1s ease-in-out;
+    }
+
+}
+ .icon{
+    padding: 14px;
+    background-color: rgba(50, 50, 50);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+ }
+.bar-icon{
+    fill: 	#218aff;
+    background-color: rgba(50, 50, 50);
+    width: 20px;
+    height: 20px;
+ }
+
+ #container{
+    width: 1.7rem;
+    height: 0.32rem;
+    background-color: rgba(50, 50, 50);
+    position: relative;
+    left: 1.55rem;
+    top: 0.5em;
+    transform: rotate(30deg);
+    z-index: 1;
+
+ }
+.nav-items{
+    list-style: none;
+    left: 3rem;
+    color: white;
+    opacity: 0;
+    position: absolute;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 12px 0 0;
+    overflow: hidden;
+    border-radius: 24px;
+    transition: 1s;
+    width: 40px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.item-icon{
+    fill: #218aff;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(60, 60, 60);
+    padding: 8px;
+    border-radius: 24px;
+    flex-shrink: 0;
+    transition: 0.5s;
+}
+.item {
+    display: none;
+    margin: 0;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+
+.nav-item:hover {
+    background-color: #218aff;
+    width: 105px;
+    .item{
+        display: contents;
+        background-color: #218aff;
+    }
+    .item-icon{
+        fill: white;
+        background-color: #218aff;
+
+    }
+}
+
+.profile{
+   margin: 0;
+    background-color: white;
+    border-radius: 20em;
+    height: 80px;
+    width: 80px;
+    border: 8px solid rgba(50, 50, 50);
+    margin-bottom: 2rem;
+}
+
+.wassup{
+    font-weight: 500;
+    font-size: 3rem;
+}
+.portfolio-subtext{
+    color: rgba(80, 80, 80);
+    margin: 10px;
+}
+.cv-btn{
+    background-color: #218aff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.main{
+    margin-top: 10rem;
+    margin: 2rem;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+.about-section{
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.section-icon{
+    width: 35px;
+    height: 35px;
+    fill: rgba(40, 40, 40);
+    background-color: #218aff;
+    border-radius: 7px;
+    padding: 4px;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 550;
+}
+.chat{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(35, 35, 35);
+    border-radius: 20px;
+}
+.box{
+    display: flex;
+    float: left;
+    clear: both;
+    max-width: 75%;
+}
+.send-box{
+    display: flex;
+    float: right;
+    clear: both;
+    max-width: 75%;
+}
+@media (min-width: 800px) {
+    .send-box{
+        max-width: 70%;
+    }
+    .box{
+        max-width: 70%;
+    }
+}
+.memoji{
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1px;
+    flex-shrink: 0;
+}
+
+.space{
+    width: 41px;
+    flex-shrink: 0;
+}
+.circle{
+    align-self: flex-end;
+    border-radius: 20px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 5px;
+    flex-shrink: 0;
+}
+.memoji-send{
+    width: 25px;
+    height: 30px;
+    padding: 5px;
+}
+.received{
+    padding: 0.8rem;
+    text-align: right;
+    background-color: rgba(50, 50, 50);
+    border-radius: 20px 20px 20px 0px;
+    margin: 0.25rem;
+    text-align: start;
+}
+
+.send{
+    padding: 0.8rem;
+    background-color: #218aff;
+    border-radius: 20px 20px 0px 20px;
+    margin: 0.25rem;
+}
+.send2{
+    padding: 0.8rem;
+    background-color: #218aff;
+    border-radius: 20px;
+    margin: 0.25rem;
+}
+
+.skills-icon{
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+}
+.html{
+    fill: rgb(236, 99, 55);
+    
+}
+.css{
+ fill: rgb(59, 104, 175);
+}
+.javascript{
+    fill: rgb(232, 215 , 88);
+}
+.react{
+    fill: rgb(134, 216, 247);
+}
+.projects-section{
+    margin-top: 20rem;
+
+}
+.project-section-icon{
+    width: 55px;
+    height: 55px;
+    fill: #218aff;
+    border-radius: 7px;
+}
+.projects{
+    margin-top: 5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-image{
+    width: 300px;
+    height: 160px;
+    border-radius: 10px;
+    border: 1px solid #218aff;
+}
+.project-name{
+    font-weight: 400;
+    
+}
+
