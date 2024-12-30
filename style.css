@@ -298,3 +298,44 @@ body{
     
 }
 
+.contact-section{
+    margin-top: 10rem;
+}
+.contact-subtext{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.contact-options{
+    display: flex;
+    align-items: center;
+    gap: 12px;  
+    margin: auto;
+    justify-content: space-evenly;
+}
+.contact-phone-icon{
+    width: 35px;
+    height: 35px;
+    fill: #218aff;
+    border-radius: 7px;
+    padding: 4px;
+    margin-right: 68px;
+}
+.contact-mail-icon{
+    width: 35px;
+    height: 35px;
+    fill: #218aff;
+    border-radius: 7px;
+    padding: 4px;
+    margin-right: 30px;
+}
+.contact-linkedin-icon{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    fill: #218aff;
+    border-radius: 7px;
+    padding: 4px;
+    right: 4px;
+}
+
