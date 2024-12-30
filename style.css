@@ -269,10 +269,14 @@ body{
 .react{
     fill: rgb(134, 216, 247);
 }
+.node{
+    fill: rgb(92, 184, 92);
+}
 .projects-section{
     margin-top: 20rem;
 
 }
+
 .project-section-icon{
     width: 55px;
     height: 55px;
@@ -301,8 +305,15 @@ body{
 .contact-section{
     margin-top: 10rem;
 }
+.contact-head{
+    margin-bottom: 5rem;
+}
+.contact-background{
+    background-color: rgb(35, 35, 35);
+    border-radius: 20px;
+    padding: 2rem;
+}
 .contact-subtext{
-    margin-top: 5rem;
     margin-bottom: 5rem;
     text-align: center;
 }
@@ -337,5 +348,38 @@ body{
     border-radius: 7px;
     padding: 4px;
     right: 4px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 3rem;
+    max-width: 30rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+.message-input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    height: 150px;
 }
 
