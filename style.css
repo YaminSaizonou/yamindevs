@@ -7,6 +7,9 @@
 body{
     background-color: rgb(30, 30, 30);
 }
+a{
+    text-decoration: none;
+}
 .header{
     height: 100vh;
     display: flex;
@@ -290,6 +293,16 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.project{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
 
 .project-image{
     width: 300px;
@@ -330,7 +343,7 @@ body{
     fill: #218aff;
     border-radius: 7px;
     padding: 4px;
-    margin-right: 68px;
+    margin-right: 100px;
 }
 .contact-mail-icon{
     width: 35px;
@@ -338,7 +351,6 @@ body{
     fill: #218aff;
     border-radius: 7px;
     padding: 4px;
-    margin-right: 30px;
 }
 .contact-linkedin-icon{
     position: relative;
@@ -348,8 +360,13 @@ body{
     border-radius: 7px;
     padding: 4px;
     right: 4px;
+    margin-right: 30px;
 }
-
+.contact-container{
+    display: flex;
+    justify-content: center;
+    
+}
 .form{
     display: flex;
     flex-direction: column;
@@ -359,7 +376,8 @@ body{
     border-radius: 20px;
     padding: 2rem;
     margin-top: 3rem;
-    max-width: 30rem;
+    max-width: 25rem;
+    width: 80%;
 }
 .form-group{
     display: flex;
@@ -382,4 +400,56 @@ body{
     color: white;
     height: 150px;
 }
+.submit-btn{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #218aff;
+    color: white;
+    cursor: pointer;
+}
+.view-btn{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #218aff;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    
+}
+.code-btn{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    border: 1px solid #218aff;
+    background-color: rgb(35, 35, 35);
+    color: #218aff;
+    cursor: pointer;
+    width: 50%;
+    
+}
+.view-btn:hover{
+    background-color: rgb(35, 35, 35);
+    color: #218aff;
+    border: 1px solid #218aff;
+}
+.code-btn:hover{
+    background-color: #218aff;
+    color: white;
+    border: 1px solid #218aff;
+}
+.submit-btn:hover{
+    background-color: rgb(35, 35, 35);
+    color: #218aff;
+    border: 1px solid #218aff;
+}
 
+.linkedin{
+    text-decoration: underline;
+}
