@@ -3,6 +3,7 @@
     padding: 0;
     color: white ;
     font-family: 'SF Pro';
+    scroll-behavior: smooth;
 }
 body{
     background-color: rgb(30, 30, 30);
@@ -293,6 +294,12 @@ a{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+@media (min-width: 1212px) {
+    .projects{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+}
 .project{
     display: flex;
     flex-direction: column;
@@ -338,24 +345,24 @@ a{
     justify-content: space-evenly;
 }
 .contact-phone-icon{
-    width: 35px;
-    height: 35px;
+    max-width: 35px;
+    max-height: 35px;
     fill: #218aff;
     border-radius: 7px;
     padding: 4px;
     margin-right: 100px;
 }
 .contact-mail-icon{
-    width: 35px;
-    height: 35px;
+    max-width: 35px;
+    max-height: 35px;
     fill: #218aff;
     border-radius: 7px;
     padding: 4px;
 }
 .contact-linkedin-icon{
     position: relative;
-    width: 40px;
-    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
     fill: #218aff;
     border-radius: 7px;
     padding: 4px;
@@ -452,4 +459,10 @@ a{
 
 .linkedin{
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 420px) {
+    .contact-icon{
+        display: none;
+    }
 }
