@@ -305,17 +305,27 @@ a{
     flex-direction: column;
     margin: 1rem;
     gap: 20px;
+    justify-content: center; 
+    align-items: first baseline;
 }
+
 .buttons{
     display: flex;
     gap: 10px;
 }
-
+.project-image-container{
+    display: flex;
+    justify-content: center;
+}
 .project-image{
     width: 300px;
     height: 160px;
     border-radius: 10px;
     border: 1px solid #218aff;
+}
+.project-description{
+    width: 310px;
+    height: 80px;
 }
 .project-name{
     font-weight: 400;
@@ -426,7 +436,7 @@ a{
     background-color: #218aff;
     color: white;
     cursor: pointer;
-    width: 50%;
+    width: 10rem;
     
 }
 .code-btn{
@@ -438,7 +448,7 @@ a{
     background-color: rgb(35, 35, 35);
     color: #218aff;
     cursor: pointer;
-    width: 50%;
+    width: 10rem;
     
 }
 .view-btn:hover{
